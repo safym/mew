@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ногоднее поздравление!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="lib/Animate.css" />
+  </head>
+  <body>
+    <div class="sky"></div>
+    <audio id="wow" src="audio/sfx/wow.ogg" style="display: none"></audio>
+    <audio
+      id="salad_piece"
+      src="audio/sfx/salad_piece.ogg"
+      style="display: none"
+    ></audio>
+    <audio
+      id="salad"
+      src="audio/speech/denoised_salad.ogg"
+      style="display: none"
+    ></audio>
+    <section class="section section_salad">
+      <img class="box salad__plate plate" src="img/plate.webp" />
+      <p class="salad__title">А потом нажми на ингридиенты 👆</p>
+      <div
+        class="salad__image bacon pulse del100 dur 2000 animated infinite"
+        data-name="bacon"
+      ></div>
+      <div
+        class="salad__image carrot pulse del200 dur 2000 animated infinite"
+        data-name="carrot"
+      ></div>
+      <div
+        class="salad__image mayo pulse del300 dur 2000 animated infinite"
+        data-name="mayo"
+      ></div>
+      <div
+        class="salad__image pickles pulse del400 dur 2000 animated infinite"
+        data-name="pickles"
+      ></div>
+      <div
+        class="salad__image potato pulse del500 dur 2000 animated infinite"
+        data-name="potato"
+      ></div>
+    </section>
+    <p class="hint pulse animated infinite dur500 del200">
+      Нажми в любом месте!
+    </p>
+    <a href="call.html" id="nextButton" class="hidden">
+      <button class="button-71 zoomIn dur200 del1000 button_next" role="button">
+        Вперед!
+      </button>
+    </a>
+  </body>
+  <script src="js/salad.js"></script>
+</html>

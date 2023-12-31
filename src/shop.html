@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ногоднее поздравление!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="lib/Animate.css" />
+  </head>
+  <body>
+    <audio
+      id="shop"
+      src="audio/speech/denoised_shop.ogg"
+      style="display: none"
+    ></audio>
+    <audio id="tort" src="audio/sfx/eating.ogg" style="display: none"></audio>
+    <audio
+      id="speakers"
+      src="audio/sfx/speakers.ogg"
+      style="display: none"
+    ></audio>
+    <audio id="osu" src="audio/sfx/wysi.ogg" style="display: none"></audio>
+    <audio id="art" src="audio/sfx/scribbles.ogg" style="display: none"></audio>
+    <audio
+      id="minecraft"
+      src="audio/sfx/house.ogg"
+      style="display: none"
+    ></audio>
+    <audio id="life" src="audio/sfx/lyfe.ogg" style="display: none"></audio>
+    <section class="section section_shop">
+      <div class="shop__header">
+        <h1 class="title">Магазин мечты 🛍️</h1>
+        <p class="shop__balance">
+          Баланс: <span id="balance">133714882282024</span> Ɣ
+        </p>
+      </div>
+      <div class="card-wrapper">
+        <!-- Тортик -->
+        <div class="card-wrapper__card card fadeIn del200 dur500">
+          <div class="card__imageWrapper">
+            <img class="card__image" src="img/tort.jpeg" />
+          </div>
+          <h2 class="card__title">Очень вкусный тортик</h2>
+          <div class="card__footer">
+            <p class="card__price">999 Ɣ</p>
+            <button data-price="999" data-name="tort" class="card__button">
+              Добавить
+            </button>
+          </div>
+        </div>
+        <!-- Новомодная аудиоаппаратура -->
+        <div class="card-wrapper__card card fadeIn del300 dur500">
+          <div class="card__imageWrapper">
+            <img class="card__image" src="img/speakers.jpeg" />
+          </div>
+          <h2 class="card__title">Новомодная аудиоаппаратура</h2>
+          <div class="card__footer">
+            <p class="card__price">11999 Ɣ</p>
+            <button
+              data-price="11999"
+              data-name="speakers"
+              class="card__button"
+            >
+              Добавить
+            </button>
+          </div>
+        </div>
+        <!-- FC на всех картах -->
+        <div class="card-wrapper__card card fadeIn del400 dur500">
+          <div class="card__imageWrapper">
+            <img class="card__image" src="img/osu.jpeg" />
+          </div>
+          <h2 class="card__title">FC на всех картах</h2>
+          <div class="card__footer">
+            <p class="card__price">727 Ɣ</p>
+            <button data-price="727" data-name="osu" class="card__button">
+              Добавить
+            </button>
+          </div>
+        </div>
+        <!-- Автограф МС Страйка -->
+        <div class="card-wrapper__card card fadeIn del300 dur500">
+          <div class="card__imageWrapper">
+            <img class="card__image" src="img/art.webp" />
+          </div>
+          <h2 class="card__title">Автограф МС Страйка</h2>
+          <div class="card__footer">
+            <p class="card__price">999999 Ɣ</p>
+            <button data-price="999999" data-name="art" class="card__button">
+              Добавить
+            </button>
+          </div>
+        </div>
+        <!-- Шикарный особняк в Волгодонске -->
+        <div class="card-wrapper__card card fadeIn del400 dur500">
+          <div class="card__imageWrapper">
+            <img class="card__image" src="img/minecraft.jpeg" />
+          </div>
+          <h2 class="card__title">Шикарный особняк в Волгодонске</h2>
+          <div class="card__footer">
+            <p class="card__price">299999 Ɣ</p>
+            <button
+              data-price="299999"
+              data-name="minecraft"
+              class="card__button"
+            >
+              Добавить
+            </button>
+          </div>
+        </div>
+        <!-- Пиздатая жизнь-->
+        <div class="card-wrapper__card card fadeIn del500 dur500">
+          <div class="card__imageWrapper">
+            <img class="card__image" src="img/life.jpg" />
+          </div>
+          <h2 class="card__title">Пиздатая жизнь</h2>
+          <div class="card__footer">
+            <p class="card__price">69999 Ɣ</p>
+            <button data-price="69999" data-name="life" class="card__button">
+              Добавить
+            </button>
+          </div>
+        </div>
+      </div>
+      <a href="salad.html" id="nextButton" class="hidden">
+        <button
+          class="button-71 zoomIn dur200 del500 button_next"
+          role="button"
+        >
+          Вперед!
+        </button>
+      </a>
+      <p class="hint pulse animated infinite dur500 del200">
+        Нажми в любом <br />
+        месте!
+      </p>
+    </section>
+  </body>
+  <script src="js/shop.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ногоднее поздравление!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="lib/Animate.css" />
+  </head>
+  <body>
+    <audio
+      id="call"
+      src="audio/speech/denoised_call_intro.ogg"
+      style="display: none"
+    ></audio>
+    <audio
+      id="buzz"
+      src="audio/sfx/phone_buzz.ogg"
+      style="display: none"
+    ></audio>
+    <audio
+      id="moscow"
+      src="audio/phone_speech/call_moscow.ogg"
+      style="display: none"
+    ></audio>
+    <audio
+      id="rostov"
+      src="audio/phone_speech/call_rostov.ogg"
+      style="display: none"
+    ></audio>
+    <audio
+      id="almaty"
+      src="audio/phone_speech/call_almaty.ogg"
+      style="display: none"
+    ></audio>
+    <section class="section section_call container"></section>
+    <div class="phone headShake animated infinite dur2000 del200">
+      <div class="red"></div>
+      <div class="window hidden">
+        <h1 id="city"></h1>
+        <button id="accept">📞</button>
+      </div>
+      <div class="btn"></div>
+    </div>
+    <p class="hint pulse animated infinite dur500 del200">
+      Нажми в любом месте!
+    </p>
+    <a href="call.html" id="nextButton" class="hidden">
+      <button class="button-71 zoomIn dur200 del1000 button_next" role="button">
+        Вперед!
+      </button>
+    </a>
+  </body>
+  <script src="js/call.js"></script>
+</html>
